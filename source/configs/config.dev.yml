@@ -1,0 +1,13 @@
+app_name: multivers
+app_version: 1.0.0
+
+image:
+  angel: E:\Workplaces\data\multiverse\Angel
+  angel_parts: [
+      "1-ear-1.png", "2-hair-1.png", "3-face-1.png", "3-face-3.png",
+      "4-body-2.png", "5-handleft-1.png", "5-handleft-3.png",
+      "6-handright-2.png", "7-leg-1.png", "8-access-1.png",
+      "1-ear-2.png", "2-hair-2.png", "3-face-2.png", "4-body-1.png",
+      "4-body-3.png", "5-handleft-2.png", "6-handright-1.png",
+      "6-handright-3.png", "7-leg-2.png", "8-access-2.png"
+  ]
