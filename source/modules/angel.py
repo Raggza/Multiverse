@@ -10,8 +10,8 @@ from source.utils.config_utils import get_config
 
 class AngelImgGenerate():
     def __init__(self):
-        self.angel_parts = get_config("image","angel_parts")
         self.root_file = get_config("image","angel")
+        self.angel_parts = get_config("image","angel_parts")
 
     def _get_parts_list(self):
         body_parts = defaultdict(list)
@@ -19,11 +19,24 @@ class AngelImgGenerate():
             prefix = f.split("-")[0]
             body_parts[prefix].append(f)
 
-        parts_choice = {k: random.choice(v) for k, v in body_parts.items()}
+        parts_choice = {}
 
+        for k, v in body_parts.items():
+            if k == "8":  # special rule cho access
+                if random.random() < 0.9:
+                    # 90% chọn 1 file random
+                    parts_choice[k] = [random.choice(v)]
+                else:
+                    # 10% chọn tất cả file
+                    parts_choice[k] = v
+            else:
+                parts_choice[k] = [random.choice(v)]
+
+        parts_choice_order = dict(sorted(parts_choice.items(), key=lambda item: int(item[0])))
+        temp_list = [item for sublist in parts_choice_order.values() for item in sublist]
         body_parts_list = []
-        for i in range(8, 0, -1):
-            path = Path(f"{self.root_file}\\{parts_choice[str(i)]}")
+        for item in temp_list[::-1]:
+            path = Path(f"{self.root_file}\\{item}")
             body_parts_list.append(path)
 
         return body_parts_list
@@ -41,16 +54,22 @@ class AngelImgGenerate():
         canvas.save(buffer, format="PNG")
         base64_str = base64.b64encode(buffer.getvalue()).decode("utf-8")
 
-        return base64_str
+        return base64_str, image_paths
 
 
 if __name__ == "__main__":
     generator = AngelImgGenerate()
-    img_base64 = generator.overlay_images()
 
-    # Giải mã base64 thành ảnh
-    img_bytes = base64.b64decode(img_base64)
-    img = Image.open(io.BytesIO(img_bytes))
+    while True:
+        img_base64, parts_list = generator.overlay_images()
 
-    # Show ảnh
-    img.show()
+        if len(parts_list) == 9:  # nghĩa là chọn cả 2 file
+            # Giải mã base64 thành ảnh
+            img_bytes = base64.b64decode(img_base64)
+            img = Image.open(io.BytesIO(img_bytes))
+
+            # Show ảnh
+            img.show()
+            break  # Thoát sau khi show, hoặc bỏ break nếu muốn tiếp tục loop
+        else:
+            print("Still generating...")
