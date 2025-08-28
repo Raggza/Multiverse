@@ -11,11 +11,11 @@ from source.utils.config_utils import get_config
 class AngelImgGenerate():
     def __init__(self):
         self.root_file = get_config("image","angel")
-        self.angel_parts = get_config("image","angel_parts")
+        self.parts = get_config("image","angel_parts")
 
     def _get_parts_list(self):
         body_parts = defaultdict(list)
-        for f in self.angel_parts:
+        for f in self.parts:
             prefix = f.split("-")[0]
             body_parts[prefix].append(f)
 
