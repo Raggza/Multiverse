@@ -11,3 +11,32 @@ image:
       "4-body-3.png", "5-handleft-2.png", "6-handright-1.png",
       "6-handright-3.png", "7-leg-2.png", "8-access-2.png"
   ]
+  demon: E:\Workplaces\data\multiverse\Demon
+  demon_parts: [
+      "1-ear-1.png", "1-ear-3.png", "2-hair-2.png", "3-face-1.png", "3-face-3.png",
+      "4-body-2.png", "5-handleft-1.png", "5-handleft-3.png", "6-handright-2.png",
+      "7-leg-1.png", "7-leg-3.png", "8-access-2.png",
+      "1-ear-2.png", "2-hair-1.png", "2-hair-3.png", "3-face-2.png", "4-body-1.png",
+      "4-body-3.png", "5-handleft-2.png", "6-handright-1.png", "6-handright-3.png",
+      "7-leg-2.png", "8-access-1.png"
+  ]
+  dragon: E:\Workplaces\data\multiverse\Dragon
+  dragon_parts: [
+      "10-access-1.png", "10-access-6.png", "11-access2-5.png", "1-ear-4.png", "3-face-1.png", "3-face-6.png",
+      "5-body-2.png", "6-handleft-1.png", "6-handleft-6.png", "7-handright-5.png", "9-leg-3.png",
+      "10-access-2.png", "11-access2-1.png", "11-access2-6.png", "1-ear-5.png", "3-face-2.png", "3-face-7.png",
+      "5-body-3.png", "6-handleft-2.png", "7-handright-1.png", "7-handright-6.png", "9-leg-4.png",
+      "10-access-3.png", "11-access2-2.png", "1-ear-1.png", "1-ear-6.png", "3-face-3.png", "4-body-armor-1.png",
+      "5-body-4.png", "6-handleft-3.png", "7-handright-2.png", "8-leg-armor-1.png", "9-leg-5.png",
+      "10-access-4.png", "11-access2-3.png", "1-ear-2.png", "1-ear-7.png", "3-face-4.png", "4-body-armor-2.png",
+      "5-body-5.png", "6-handleft-4.png", "7-handright-3.png", "9-leg-1.png", "9-leg-6.png",
+      "10-access-5.png", "11-access2-4.png", "1-ear-3.png", "1-ear-8.png", "3-face-5.png", "5-body-1.png",
+      "5-body-6.png", "6-handleft-5.png", "7-handright-4.png", "9-leg-2.png"
+  ]
+  dryad: E:\Workplaces\data\multiverse\Dryad
+  dryad_parts: [
+      "1-beard-1.png", "2-hair-1.png", "3-face-1.png", "3-face-3.png", "4-body-2.png",
+      "5-handleft-1.png", "5-handleft-3.png", "6-handright-2.png", "7-leg-1.png",
+      "1-beard-2.png", "2-hair-2.png", "3-face-2.png", "4-body-1.png", "4-body-3.png",
+      "5-handleft-2.png", "6-handright-1.png", "6-handright-3.png", "7-leg-2.png"
+  ]
