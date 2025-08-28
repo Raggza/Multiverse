@@ -40,3 +40,13 @@ image:
       "1-beard-2.png", "2-hair-2.png", "3-face-2.png", "4-body-1.png", "4-body-3.png",
       "5-handleft-2.png", "6-handright-1.png", "6-handright-3.png", "7-leg-2.png"
   ]
+  dwarf: E:\Workplaces\data\multiverse\Dwarf
+  dwarf_parts: [
+        "1-beard-1.png", "2-ear-1.png", "2-ear-4.png", "4-face-1.png", "4-face-4.png",
+        "5-body-1.png", "5-body-4.png", "5-body-7.png", "6-handleft-3.png", "7-handright-2.png",
+        "8-leg-1.png", "8-leg-4.png", "1-beard-2.png", "2-ear-2.png", "3-hair-1.png",
+        "4-face-2.png", "4-face-5.png", "5-body-2.png", "5-body-5.png", "6-handleft-1.png",
+        "6-handleft-4.png", "7-handright-3.png", "8-leg-2.png", "1-beard-3.png", "2-ear-3.png",
+        "3-hair-2.png", "4-face-3.png", "4-face-6.png", "5-body-3.png", "5-body-6.png",
+        "6-handleft-2.png", "7-handright-1.png", "7-handright-4.png", "8-leg-3.png"
+    ]
