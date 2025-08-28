@@ -26,7 +26,6 @@ if st.button("Generate"):
                 "race": race,
                 "sub_race": "",
                 "weapon": "",
-                "model_name": "",
             },
         )
         data = response.json()  # lấy JSON từ API
