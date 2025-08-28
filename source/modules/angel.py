@@ -44,7 +44,7 @@ class AngelImgGenerate():
     def overlay_images(self):
         image_paths = self._get_parts_list()
         base = Image.open(image_paths[0]).convert("RGBA")
-        canvas = Image.new("RGBA", base.size, (255, 255, 255, 255))
+        canvas = Image.new("RGBA", base.size, (255, 255, 255, 0))
 
         for path in image_paths:
             img = Image.open(path).convert("RGBA")
