@@ -29,6 +29,10 @@ async def get_answer(request_data: CharacterInput):  # Use Pydantic model here
         response = pipeline.invoke(request_data)
         return {
             "status": 200,
+            "race": request_data.race,
+            "sub_race": request_data.sub_race,
+            "weapon": request_data.weapon,
+            "model_name": request_data.model_name,
             "content": response,
         }
 
