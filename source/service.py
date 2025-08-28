@@ -32,7 +32,6 @@ async def get_answer(request_data: CharacterInput):  # Use Pydantic model here
             "race": request_data.race,
             "sub_race": request_data.sub_race,
             "weapon": request_data.weapon,
-            "model_name": request_data.model_name,
             "content": response,
         }
 
